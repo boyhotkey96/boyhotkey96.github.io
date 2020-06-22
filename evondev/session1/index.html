@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 1 - Front-end | Evondev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header>
+       <h1>Buổi 1</h1>
+    </header>
+    
+    <main>
+        <div class="exercise">
+            <div class="list">
+                <div class="title">
+                    1. Cho một hình thiết kế như này với tên gọi trong tiếng Anh là `card` áp dụng BEM để kể ra block, elements, 
+                    và modifier nếu có: https://static.collectui.com/shots/2451336/daily-ui-challenge-011-large
+                    ví dụ: `card__image`.
+                </div>
+                <div class="answer answer--card">
+                    <div class="card">
+                        <img src="https://img.icons8.com/clouds/100/000000/cloud-network.png" width="50px" alt="image" class="card__image" />
+                        <h3 class="card__title">card__title</h3>
+                        <div class="card__desc">card__desc</div>
+                        <button class="btn btn--blue">btn--blue</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.icons8.com/officel/16/000000/delete-link.png" width="50px" alt="image" class="card__image" />
+                        <h3 class="card__title">card__title</h3>
+                        <div class="card__desc">card__desc</div>
+                        <button class="btn btn--pink">btn--pink</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    2. Tạo một khối có class là `box` có độ rộng và chiều cao lần lượt là `200x300` có màu nền là `#ffa400` 
+                    và chữ bất kỳ màu đen, border màu vàng, padding 10px, margin 15px bo góc 4px, chữ canh giữa. Lưu ý sử 
+                    dụng đơn vị `rem`.
+                </div>
+                <div class="answer">
+                    <div class="box">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit eligendi ab libero 
+                            necessitatibus sequi molestias harum omnis itaque placeat! Praesentium consequatur nisi tenetur, 
+                            enim ipsam maiores commodi nemo autem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit 
+                            eligendi ab libero necessitatibus sequi molestias harum omnis itaque placeat! Praesentium consequatur nisi 
+                            tenetur, enim ipsam maiores commodi nemo autem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    3. Tạo một khối có đoạn chữ rất dài bât kỳ, có độ rộng tối đa là `500px` hiển thị 3 hàng kết hợp dấu 3 chấm.
+                </div>
+                <div class="answer">
+                    <div class="text text-three">
+                        <span>Theo Hãng tin Reuters, CPP do ông Hun Sen làm chủ tịch hiện kiểm soát toàn bộ 125 ghế tại Quốc hội 
+                            Campuchia - tức Hạ viện - sau khi phe đối lập chính là Đảng Cứu quốc Campuchia (CNRP) bị giải tán năm 2018 
+                            với cáo buộc âm mưu lật đổ chính quyền. Thủ tướng Hun Sen, một trong những chính trị gia cầm quyền lâu nhất 
+                            thế giới tính đến thời điểm hiện tại, còn tuyên bố Đảng CPP sẽ tiếp tục nắm quyền thêm 100 năm nữa và không 
+                            ai có thể thách thức được điều đó. Ông Hun Sen dẫn ra việc trụ sở trị giá 30 triệu USD mới xây của CPP ở 
+                            thủ đô Phnom Penh là bằng chứng cho thấy đảng này sẽ tiếp tục vững mạnh và nắm quyền thêm một thời gian dài. 
+                            "Phải nhớ điều này, không phải 2 năm hay 3 năm đâu, mà 50 năm, thậm chí 100 năm nữa". 
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    4. Tạo một khối có đoạn chữ rất dài bât kỳ, có độ rộng tối đa là `100px` hiển thị 1 hàng kết hợp dấu 3 chấm.
+                </div>
+                <div class="answer">
+                    <div class="text text-one">
+                        <span>Theo Hãng tin Reuters, CPP do ông Hun Sen làm chủ tịch hiện kiểm soát toàn bộ 125 ghế tại Quốc hội 
+                            Campuchia - tức Hạ viện - sau khi phe đối lập chính là Đảng Cứu quốc Campuchia (CNRP) bị giải tán năm 2018 
+                            với cáo buộc âm mưu lật đổ chính quyền. Thủ tướng Hun Sen, một trong những chính trị gia cầm quyền lâu nhất 
+                            thế giới tính đến thời điểm hiện tại, còn tuyên bố Đảng CPP sẽ tiếp tục nắm quyền thêm 100 năm nữa và không 
+                            ai có thể thách thức được điều đó. Ông Hun Sen dẫn ra việc trụ sở trị giá 30 triệu USD mới xây của CPP ở 
+                            thủ đô Phnom Penh là bằng chứng cho thấy đảng này sẽ tiếp tục vững mạnh và nắm quyền thêm một thời gian dài. 
+                            "Phải nhớ điều này, không phải 2 năm hay 3 năm đâu, mà 50 năm, thậm chí 100 năm nữa".</span>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    5. Cho một hình thiết kế như này, gọi là `product` hiểu về BEM và liệt kê ra các class về block, elements, modifer nếu có: https://static.collectui.com/shots/2414184/travel-bag-detail-spare-time-fun-large
+                ví dụ: `product__container`.
+                </div>
+                <div class="answer">
+                    <div class="product">
+                        <img src="https://img.icons8.com/clouds/100/000000/cloud-network.png" width="50px" alt="image" class="product__image" />
+                        <div class="product__title">product__title</div>
+                        <div class="product__price">product__price</div>
+                        <div class="product__desc">product__desc</div>
+                        <div class="product__size">
+                            <div class="product__size--s">product__size--s</div>
+                            <div class="product__size--m">product__size--m</div>
+                            <div class="product__size--l">product__size--l</div>
+                            <div class="product__size--xl">product__size--xl</div>
+                            <div class="product__size--xxl">product__size--xxl</div>
+                        </div>
+                        <div class="product__color">
+                            <div class="product__color--pink">product__color--pink</div>
+                            <div class="product__color--purple">product__color--purple</div>
+                            <div class="product__color--orange">product__color--orange</div>
+                        </div>
+                        <div class="product__total"></div>
+                        <button class="button btn__pink">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    6. Tạo một khối có độ rộng và chiều cao lần lượt là `100vw` `100vh` cho hình nền bất kỳ, yêu cầu phủ toàn khối, canh góc 
+                bên phải, không có lặp lại.
+                </div>
+                <div class="answer">
+                    <div class="fullscreen">
+
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    7. Tạo một khối có độ rộng và chiêu cao tương ứng là `400x400` và cho hình ảnh hiển thị bên trong, yêu cầu khối này là 
+                hình tròn, và hình ảnh nằm trọn bên trong, không được méo, không được tràn ra ngoài, gợi ý dùng `border-radius` và
+                 `overflow:hidden`.
+                </div>
+                <div class="answer">
+                    <div class="box-7">
+
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    8. Chèn font từ Google vào bài tập sử dụng Fonts `Roboto` với các độ đậm là `400` và `600`.
+                </div>
+                <div class="answer">
+
+                </div>
+            </div>
+            <div class="list">
+                9. Chỉ là yêu cầu: phải sử dụng đơn vị `rem` cho hợp lý, không sử dụng `px`, sử dụng `box-sizing` để hiển thị cho đúng kích thước,
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Phùng Bá Dự</h2>
+        <h2>#PhungBaDu</h2>
+    </footer>
+</body>
+</html>
