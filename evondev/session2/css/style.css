@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-success-left: #69ecab;
+    --color-success-right: #50ccc6;
+    --color-information-left: #ace4fe;
+    --color-information-right: #70b6ed;
+    --color-buynow-left: #b0c0ff;
+    --color-buynow-right: #ae8af1;
+    --color-warning-left: #fed697;
+    --color-warning-right: #fda460;
+    --color-contact-left: #ffc2ac;
+    --color-contact-right: #ed7372;
+    --color-delete-left: #ffacb9;
+    --color-delete-right: #f6879d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+/* session1: button gradient, box-shadow  */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 40rem;  
+    height: 6rem;
+    margin: 2rem 0;
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-image: linear-gradient(to right, var(--color-success-left), var(--color-success-right));
+    /* box-shadow: x y blur scale color */
+    box-shadow: 10px 10px 5px 0 var(--color-success-left);
+    /* zeplin figma */
+}
+
+.btn-grayblue {
+    background-image: linear-gradient(to right, var(--color-information-left), var(--color-information-right));
+    box-shadow: 10px 10px 5px 0 var(--color-information-left);
+}
+
+.btn-purple {
+    background-image: linear-gradient(to right, var(--color-buynow-left), var(--color-buynow-right));
+    box-shadow: 10px 10px 5px 0 var(--color-buynow-left);
+}
+
+.btn-orange {
+    background-image: linear-gradient(to right, var(--color-warning-left), var(--color-warning-right));
+    box-shadow: 10px 10px 5px 0 var(--color-warning-left);
+}
+
+.btn-orangepink {
+    background-image: linear-gradient(to right, var(--color-contact-left), var(--color-contact-right));
+    box-shadow: 10px 10px 5px 0 var(--color-contact-left);
+}
+
+.btn-pink {
+    background-image: linear-gradient(to right, var(--color-delete-left), var(--color-delete-right));
+    box-shadow: 10px 10px 5px 0 var(--color-delete-left);
+}
+
+/*session2: text-gradient*/
+.text-gradient {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20rem;
+    font-weight: bold;
+    color: red;
+}
+
+@supports (-webkit-background-clip: text) {
+    .text-gradient {
+        color: transparent;
+        background-image: linear-gradient(to right bottom, #ffd76a 20%, #ff12a5);
+        -webkit-background-clip: text;
+    }
+}
+
+/* session2: child */
+.child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    margin: 10px 20px;
+}
+
+.box-square {
+    width: 17rem;
+    height: 20rem;
+    background: red;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.box-color {
+    margin: 5px 0;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.box-title {
+    font-size: 1.8rem;
+    color: gray;
+    opacity: 0.8;
+}
+
+.child div:first-child .box-square {
+    background: #a24bf0;
+}
+
+.child div:nth-child(2) .box-square  {
+    background: #38dbd2;
+}
+
+.child div:nth-child(3) .box-square {
+    background: #25c2e3;
+}
+
+.child div:nth-child(4) .box-square {
+    background: #ea344f;
+}
+
+.child div:nth-child(5) .box-square {
+    background: #dd44a7;
+}
+
+.child div:nth-child(6) .box-square {
+    background: #f7ac2a;
+}
+
+.child div:nth-last-child(1) .box-square {
+    background: #fcfcfc;
+}
+
+.child div:nth-last-child(2) .box-square {
+    background: #e8e8e8;
+}
+
+.child div:nth-last-child(3) .box-square{
+    background: #d2d2d2;
+}
+
+.child div:nth-last-child(4) .box-square {
+    background: #88888888;
+}
+
+.child div:nth-last-child(5) .box-square {
+    background: #555555;
+}
+
+.child div:nth-last-child(6) .box-square {
+    background: #000000;
+}
+
+/* session4: hover, transtion */
+.child div:nth-child(odd) .box-square:hover {
+    background: linear-gradient(to right bottom, var(--color-success-left), var(--color-success-right));
+    transition: 0.5s;
+}
+
+.child div:nth-child(even) .box-square:hover {
+    background: linear-gradient(to right top, var(--color-information-left), var(--color-information-right));
+    transition: 0.5s;
+}
+
+/* session5: selectors */
+div[data-link*="https"] {
+    color: aqua;
+}
+
+div[data-link$=".vn"] {
+    color: blue;
+}
+
+div[data-name*="hello"] {
+    color: plum;
+}
+
+input[type="email"] {
+    background-color: blueviolet;
+}
+
+input[name="fullname"] {
+    background-color: cadetblue;
+}
+
+/* combinator */
+.box .combinator + p {
+    font-size: 2rem;
+}
+
+.box .combinator ~ p {
+    color: red;
+    border: 1px dashed pink;
+}
